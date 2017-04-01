@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    tools:context="com.vst.vstsupport.control.message.activity.CommonMsgDetailActivity">
+
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/layout_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:src="@mipmap/arrears_no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="暂无数据"
+            android:textColor="@color/color_323232"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/time_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/title_b"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@drawable/common_time_frame"-->
+    <!--android:gravity="center"-->
+    <!--android:text="16:20"-->
+    <!--android:textColor="@color/white" />-->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/common_msg_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/time_tv"
+        android:layout_marginTop="44dp"
+        android:background="@null"
+        android:divider="@null">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

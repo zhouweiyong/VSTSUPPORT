@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vst.vstsupport.control.arrears.activity.FollowUpActivity">
+
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/top_loy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_b"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_button_frame"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/reply_et"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/title_b"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="解决方案"
+            android:padding="10dp"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_b4b4b4"
+            android:textSize="14sp" />
+
+        <include layout="@layout/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/reply_et"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/clear_des_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="清理时间"
+                android:textColor="@color/color_646464"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/clear_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/common_more_sub_icon"
+                android:gravity="center|right"
+                android:textColor="@color/color_646464"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <include layout="@layout/line" />
+
+        <TextView
+            android:id="@+id/ocuppay_fund_tv"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/clear_time_tv"
+            android:layout_margin="3dp"
+            android:drawableRight="@drawable/selector_follow_up_occupay"
+            android:gravity="top"
+            android:padding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="占用资金"
+            android:textColor="@color/color_646464"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_loy"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/common_btn_selector"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

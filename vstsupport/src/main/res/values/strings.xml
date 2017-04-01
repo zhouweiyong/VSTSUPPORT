@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">伟仕佳杰</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="common_loading_net_error">网络不给力，加载失败</string>
+    <string name="common_reload">重新加载</string>
+    <string name="common_checknetwork">检查网络设置</string>
+
+
+    <!-- 主框架 -->
+    <string name="nav_message">我的消息</string>
+    <string name="nav_arrears">应收账款</string>
+    <string name="nav_inventory">库存积压</string>
+    <string name="nav_setting">设置</string>
+    <string name="common_empty"></string>
+    <string name="limit_time_expire">查询</string>
+
+    <!--标题-->
+    <string name="title_find_pwd">忘记密码</string>
+    <string name="title_message">我的消息</string>
+    <string name="title_setting">设置</string>
+    <string name="title_copy_right">版权信息</string>
+
+    <!-- 应用更新 -->
+    <string name="errmsg">更新失败</string>
+    <string name="mesaage_tip">检查更新...</string>
+    <string name="negative_text">下次更新</string>
+    <string name="common_logout">退出</string>
+    <string name="common_calcle">取消</string>
+    <string name="version">版本: V%s</string>
+    <string name="update_size">大小：%s</string>
+    <string name="update_content">检查到有新的版本\n%s\n是否立即更新？</string>
+    <string name="update_title">检测到新版本：V%s</string>
+    <string name="update_confirm">立即更新</string>
+    <string name="update_error">安装出错！</string>
+    <string name="upgrade">正在升级</string>
+    <string name="handler_download_error">下载文件不匹配！</string>
+    <string name="handler_download_error1">文件下载失败！</string>
+    <string name="schedule">下载进度:&#160;</string>
+    <string name="error_response">网络异常，请检查网络!</string>
+</resources>

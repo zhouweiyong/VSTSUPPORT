@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huika.dealontop.views.common.CommonNoNetView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff3" >
+
+    <ImageView
+        android:id="@+id/load_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/icon_load_error" />
+
+    <TextView
+        android:id="@+id/load_error_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_error_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:text="网络获取数据失败，请检查网络设置"
+        android:textColor="#969696"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/click_reload"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/load_error_tip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/reload_corner_gray_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="#969696"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/click_checknetwork"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/click_reload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reload_corner_gray_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="检查网络设置"
+        android:textColor="#969696"
+        android:textSize="14sp" />
+
+</com.huika.dealontop.views.common.CommonNoNetView>

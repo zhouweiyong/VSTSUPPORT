@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/color_f0f0f0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="应收账款"
+        android:gravity="center"
+        android:background="@color/color_e94415"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/limit_time_expire_tv"
+        android:textSize="15sp"
+        android:textColor="@color/color_323232"
+        android:drawableLeft="@mipmap/inventory_follow_up_icon_1"
+        android:drawableRight="@mipmap/common_more_list_icon"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:text="超期跟进"
+        android:gravity="center|left"
+        />
+
+    <include layout="@layout/line_lint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/should_look_tv"
+        android:textSize="15sp"
+        android:textColor="@color/color_323232"
+        android:drawableLeft="@mipmap/inventory_look_icon_2"
+        android:drawableRight="@mipmap/common_more_list_icon"
+       android:padding="15dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:text="应收查看"
+        android:gravity="left|center"
+        />
+
+</LinearLayout>

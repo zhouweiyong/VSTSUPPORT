@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_error_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bg"
+    >
+    <ImageView 
+        android:id="@+id/load_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/icon_load_error"
+        />
+    
+    <TextView 
+        android:id="@+id/load_error_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_error_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/common_loading_net_error"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        />
+    
+    <TextView 
+        android:id="@+id/click_reload"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/load_error_tip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/reload_corner_gray_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/common_reload"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        />
+    <TextView 
+        android:id="@+id/click_checknetwork"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/click_reload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reload_corner_gray_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/common_checknetwork"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

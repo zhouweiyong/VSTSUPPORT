@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_f0f0f0"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_a"
+        layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/genloy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_a">
+        <!--top-->
+        <RelativeLayout
+            android:id="@+id/detail_gen_loy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send_msg_loy"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/top_loy"
+                layout="@layout/detail_top_layout" />
+
+            <ScrollView
+                android:id="@+id/scrollloy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_loy">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--center loy-->
+                    <include layout="@layout/detail_center_layout" />
+
+
+                    <com.vst.vstsupport.view.ListViewForScrollView
+                        android:id="@+id/comunicate_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:listSelector="@null" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_msg_loy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/send_msg_layout" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

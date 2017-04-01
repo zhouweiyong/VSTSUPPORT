@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/genloy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <!--top-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_button_frame"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/second_line_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GD北京迅捷科技有限公司"
+                android:textColor="@color/color_323232"
+                android:layout_toLeftOf="@+id/has_calculate_tv"
+                android:paddingRight="5dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/has_calculate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_limit_btn_bg"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="已跟进"
+                android:textColor="@color/color_007fbe"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_line_tv"
+                android:paddingTop="10dp"
+                android:text="ORASS"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/has_calculate_tv"
+                android:textColor="@color/color_646464"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <include layout="@layout/line" />
+
+        <RelativeLayout
+            android:id="@+id/open_close_loy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/count_total_des_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:text="超期总额"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:id="@+id/count_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/count_total_des_tv"
+                android:text="￥427790.00"
+                android:textColor="@color/color_FE6364"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/open_close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/common_down_icon" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollloy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--center_open_close-->
+                <LinearLayout
+                    android:id="@+id/common_item_open_close_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:visibility="gone">
+
+                    <include layout="@layout/common_item_open_close_layout2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/last_long_time_human_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="最长逾期天数：32天|业务员：罗凯"
+                    android:textColor="@color/color_323232"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/company_dept_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="分公司：沈阳|事业部外设产品事业部"
+                    android:textColor="@color/color_323232"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/dept_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="15dp"
+                    android:text="事    业     部   ：外设产品事业部"
+                    android:textColor="@color/color_323232"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <include
+                    android:id="@+id/dept_line_des"
+                    layout="@layout/line" />
+
+                <TextView
+                    android:id="@+id/deal_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="15dp"
+                    android:text="解决方案：正在与客户沟通下个月汇款"
+                    android:textColor="@color/color_323232"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/clear_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="清理时间：2016-5-31"
+                    android:textColor="@color/color_323232"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.vst.vstsupport.view.ListViewForScrollView
+        android:id="@+id/comunicate_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:divider="@null"
+        android:listSelector="@null" />
+</LinearLayout>

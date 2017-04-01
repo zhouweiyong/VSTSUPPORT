@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    tools:context="com.vst.vstsupport.control.arrears.activity.CheckReceiveActivity">
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/common_titlebar"/>
+
+    <include layout="@layout/common_sort_layout"/>
+
+    <View
+        android:layout_below="@+id/sort_ll"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/color_d8d8d8"
+        />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@+id/sort_ll"
+        android:id="@+id/check_receive_lv"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</RelativeLayout>

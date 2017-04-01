@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/center_loy"
+    android:layout_width="match_parent"
+    android:background="@drawable/common_detail_top_frame"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/top_loy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_toLeftOf="@+id/has_calculate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:text="GD北京迅捷科技有限公司fdsfdsfdfdsfdsffdsfdsfdsf"
+            android:textColor="@color/color_323232"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/has_calculate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_limit_btn_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="已跟进"
+            android:textColor="@color/color_007fbe"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/second_line_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="ORASS"
+            android:textColor="@color/color_646464"
+            android:singleLine="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top_loy"
+        android:background="@color/color_d8d8d8" />
+
+    <RelativeLayout
+        android:id="@+id/open_close_loy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_loy"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/count_total_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="17dp"
+            android:text="超期总额"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/count_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/count_total_des_tv"
+            android:text="￥427790.00"
+            android:textColor="@color/color_FE6364"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/open_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/common_down_icon" />
+    </RelativeLayout>
+</RelativeLayout>

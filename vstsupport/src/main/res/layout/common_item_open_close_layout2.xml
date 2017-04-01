@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@mipmap/item_open_close_bg"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/des_day_loy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des_totleMey_tv"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_day0to60_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingBottom="10dp"
+                android:text="0至60天"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/day0to60_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_day0to60_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_day61to90_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingBottom="10dp"
+                android:text="61至90天"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/day61to90_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_day61to90_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_day91to120_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingBottom="10dp"
+                android:text="60至120天"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/day91to120_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_day91to120_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_day120up_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="120天以上"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/day120up_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_day120up_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

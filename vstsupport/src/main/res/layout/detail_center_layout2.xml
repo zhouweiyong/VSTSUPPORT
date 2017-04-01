@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/top_loy"
+    android:background="@drawable/common_detail_bottom_frame"
+    android:orientation="vertical">
+
+    <!--center_open_close-->
+    <LinearLayout
+        android:id="@+id/common_item_open_close_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <include layout="@layout/common_item_open_close_layout2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/last_long_time_human_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="最长逾期天数：32天|业务员：罗凯"
+        android:textColor="@color/color_323232"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/company_dept_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="分    公     司    ：沈阳"
+        android:textColor="@color/color_323232"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dept_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="事    业     部   ：外设产品事业部"
+        android:textColor="@color/color_323232"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/devide_line"
+        layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deal_loy"
+        >
+        <TextView
+            android:id="@+id/deal_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="解决方案:"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/deal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_toRightOf="@+id/deal_des_tv"
+            android:text="正在与客户沟通下个月汇款fdsfdsf正在与客户沟通下个月汇款fdsfdsf正在与客户沟通下个月汇款fdsfdsf正在与客户沟通下个月汇款fdsfdsf"
+            android:textColor="@color/color_323232"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/clear_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="清理时间：2016-5-31"
+        android:textColor="@color/color_323232"
+        android:textSize="13sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="99dp"
+    android:background="@mipmap/item_open_close_bg"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des_totleMey_tv"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_area_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingBottom="10dp"
+                android:text="区域"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/aere_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_area_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/des_dept_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingBottom="10dp"
+                android:text="事业部"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dept_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/des_dept_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/sale_man_tv"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="业务员"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sale_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sale_man_tv"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

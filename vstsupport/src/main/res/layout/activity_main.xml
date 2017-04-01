@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vstecs.android.uiframework.view.jazzyviewpage.JazzyViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.vstecs.android.uiframework.view.jazzyviewpage.JazzyViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider" />
+
+    <android.support.v4.view.CustomIndicatorLinearLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="bottom"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab_icon_index"
+                style="@style/main_tab_icon"
+                android:src="@drawable/selector_main_tab_message" />
+
+            <TextView
+                style="@style/main_tab_tv"
+                android:layout_below="@+id/tab_icon_index"
+                android:text="@string/nav_message" />
+            <TextView
+                android:id="@+id/tv_num_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tab_icon_index"
+                android:layout_alignTop="@+id/tab_icon_index"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-3dp"
+                android:background="@mipmap/msg_num_bg"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab_icon_message"
+                style="@style/main_tab_icon"
+                android:src="@drawable/selector_main_tab_arrears" />
+
+            <TextView
+                style="@style/main_tab_tv"
+                android:layout_below="@+id/tab_icon_message"
+                android:text="@string/nav_arrears" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab_icon_contacts"
+                style="@style/main_tab_icon"
+                android:src="@drawable/selector_main_tab_inventory" />
+
+            <TextView
+                style="@style/main_tab_tv"
+                android:layout_below="@+id/tab_icon_contacts"
+                android:text="@string/nav_inventory" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab_icon_myinfo"
+                style="@style/main_tab_icon"
+                android:src="@drawable/selector_main_tab_setting" />
+
+            <TextView
+                style="@style/main_tab_tv"
+                android:layout_below="@+id/tab_icon_myinfo"
+                android:text="@string/nav_setting" />
+        </RelativeLayout>
+    </android.support.v4.view.CustomIndicatorLinearLayout>
+
+</LinearLayout>

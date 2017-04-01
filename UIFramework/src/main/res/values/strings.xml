@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UiLib</string>
+
+    <!--网络加载和加载错误布局-->
+    <string name="common_loading_net_error">网络不给力喔</string>
+    <string name="common_reload">重新加载</string>
+    <string name="common_checknetwork">检查网络设置</string>
+    <string name="common_error_msg">抱歉,系统出错了!\n请点击屏幕重试~</string>
+    <string name="common_empty_msg">抱歉,暂未获取到数据!\n请点击屏幕重试~</string>
+
+
+
+</resources>

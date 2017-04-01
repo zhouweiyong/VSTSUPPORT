@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="库存积压"
+        android:gravity="center"
+        android:background="@color/color_e94415"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/inventory_follow_up_tv"
+        android:textSize="15sp"
+        android:textColor="@color/color_323232"
+        android:drawableLeft="@mipmap/inventory_follow_up_icon"
+        android:drawableRight="@mipmap/common_more_list_icon"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:text="库存跟进"
+        android:gravity="center|left"
+        />
+
+    <include layout="@layout/line_lint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/inventory_look_tv"
+        android:textSize="15sp"
+        android:textColor="@color/color_323232"
+        android:drawableLeft="@mipmap/inventory_look_icon"
+        android:drawableRight="@mipmap/common_more_list_icon"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:text="库存查看"
+        android:gravity="left|center"
+        />
+
+</LinearLayout>

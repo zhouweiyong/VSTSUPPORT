@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    tools:context="com.vst.vstsupport.control.arrears.activity.CommonSelectActivity">
+
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/common_titlebar"/>
+
+
+    <ListView
+        android:layout_below="@+id/title_b"
+        android:id="@+id/select_lv"
+        android:layout_marginTop="10dp"
+        android:listSelector="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <include
+
+        layout="@layout/select_no_data_view"/>
+
+</RelativeLayout>

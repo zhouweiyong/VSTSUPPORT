@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f0f0f0"
+                tools:context="com.vst.vstsupport.control.arrears.activity.CheckReceiveActivity">
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/common_titlebar"/>
+
+    <TextView
+        android:id="@+id/finish_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="结束日期 2016-09-06"
+        android:gravity="center"
+        android:layout_below="@+id/title_b"
+        android:textSize="14sp"
+        android:textColor="@color/color_323232"
+        android:padding="10dp"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@+id/finish_time_tv"
+        android:id="@+id/check_receive_lv"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/color_e6e6e6"
+    android:visibility="visible">
+
+    <com.vst.vstsupport.utils.ClearableEditText
+        android:id="@+id/send_msg_et"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/send_msg_tv"
+        android:background="@drawable/common_button_frame"
+        android:hint="输入文字"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_323232"
+        android:textColorHint="@color/color_b4b4b4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/send_msg_tv"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/common_btn_selector"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</RelativeLayout>
